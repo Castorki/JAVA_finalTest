@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class Notebook {
     String label;
@@ -17,6 +18,11 @@ public class Notebook {
         return String.format(
                 "label: %s, processor: %s, graphics: %s, sizeMemory: %d,typeStorage: %s, sizeStorage: %d, displaySize: %d, os: %s, color: %s,  price: %d, ",
                 label, processor, graphics, sizeMemory, typeStorage, sizeStorage, displaySize, os, color, price);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(label, processor, graphics, sizeMemory, typeStorage, sizeStorage, displaySize, os, color, price);
     }
 
 }

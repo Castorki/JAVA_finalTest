@@ -98,7 +98,7 @@ public class Main {
     }
 
     public static Set<Notebook> moveOn(Set <Notebook> notes){
-        System.out.print("Do you want to continue or reset a filtration? (yes/no/reset): ");
+        System.out.print("Do you want to continue? (yes/no): ");
         Scanner scanner = new Scanner(System.in);
         String answer = scanner.nextLine();
         if(answer.equalsIgnoreCase("yes")) {
